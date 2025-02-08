@@ -19,6 +19,10 @@ app.use(cors({
 
 app.use(express.json());
 
+app.get("/", (req,res)=>{
+  res.send("API is Running...")
+});
+
 mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
 // mongoose.connect("mongodb+srv://vky39:Shiv@2019@cluster0.i4i13.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('MongoDB connected'))
