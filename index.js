@@ -12,7 +12,7 @@ app.use(cors({
   origin: [
     'http://localhost:5173', // Local development
     'https://lucky-granita-e9b0c5.netlify.app', // Deployed frontend
-    'https://igapcricket.netlify.app/'
+    'https://igapcricket.netlify.app'
   ],
   methods: 'GET,POST,PUT,DELETE',
   credentials: true
